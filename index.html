@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>미세먼지 api</title>
+		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/index.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<link rel="stylesheet" href="./css/rwdmise.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="stylesheet" href="./css/reset.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<h1>오늘의 미세먼지</h1>
+
+			<!-- <div class="box"> -->
+			<!-- <ul id="names-q1">
+            <li>경기 : 82</li>
+            <li>부산 : 87</li>
+            <li>대구 : 84</li>
+            <li>인천 : 83</li>
+            <li>서울 : 84</li>
+            <li>강원 : 85</li>
+        </ul> -->
+			<!-- </div> -->
+
+			<div class="main">
+				<div class="imt">
+					<img src="./img/수정수치.jpg" alt="" />
+				</div>
+				<div class="chart-container">
+					<canvas id="list" style="height: 60vh; width: 50vw"></canvas>
+				</div>
+				<div class="top-outer">
+					<div class="top">
+						<img src="./img/dd_mask.gif">
+
+						<div class="inform">
+							<div>
+								<img src="./img/마스크너구리.jpg" />
+								<p>호흡기가 민감하면, 마스크를 쓰세요.</p>
+							</div>
+							<div>
+								<img src="./img/park.png" />
+								<p>
+									미세먼지 농도가 심한 날은 무리한<br />
+									야외활동 자제해주세요.
+								</p>
+							</div>
+							<div>
+								<img src="./img/물병.jpg" />
+								<p>
+									물이나 비타민C가 많은 과일/야채를<br />
+									섭취해보세요.
+								</p>
+							</div>
+							<div>
+								<img src="./img/window.png" />
+								<p>미세먼지 농도에 따라 환기 해주세요.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
